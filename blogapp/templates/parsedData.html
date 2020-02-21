@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+ {% for PD in PD %}
+     <main role="main" class="container">
+            <div class="jumbotron">
+                <h1>{{ PD.title }}</h1><br>
+     <h4>링크:{{ PD.link }}</h4>
+     <br>
+            </div>
+        </main>
+
+   {% endfor %}
+
+
+{% endblock %}

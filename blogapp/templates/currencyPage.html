@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html><head>
+ <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+<title>외환 환율</title>
+<meta name="description" content="환율 위젯 - 추가  - 환율 위젯 - 외환 환율">
+<meta name="keywords" content="환율 위젯,환율,외환 환율">
+<link href="https://www.fxexchangerate.com/static/favicon.ico" rel="icon" type="image/x-icon">
+<link href="https://www.fxexchangerate.com/static/apple-touch-icon-iphone-60x60.png" rel="apple-touch-icon">
+<link href="https://www.fxexchangerate.com/static/apple-touch-icon-ipad-76x76.png" rel="apple-touch-icon" sizes="76x76">
+<link href="https://www.fxexchangerate.com/static/apple-touch-icon-iphone-retina-120x120.png" rel="apple-touch-icon" sizes="120x120">
+<link href="https://www.fxexchangerate.com/static/apple-touch-icon-ipad-retina-152x152.png" rel="apple-touch-icon" sizes="152x152">
+<style type="text/css">
+.pure-g [class*=pure-u],body{font-weight:400}.sider_d li:hover,a{text-decoration:none}html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-style:normal;margin:0 auto;color:#666;background-color:#f1f1f1}.menu{display:block}a{background-color:transparent}a:active,a:hover{outline:0}h1,h2{margin:0 0 0 10px}h2{font-size:1.2em;color:#999}.fx-titile h1,h1{color:#000}h1{font-size:1.6em}.fx-titile{float:left;width:71%}.main{margin:0 auto;width:100%}.container,.container-all,.header{max-width:67.5em;margin:0 auto;background-color:#fff}.container{padding:0 10px}.header{margin:1em auto}.container-fluid{background-color:#f1f1f1}.container-default{background-color:#4b5566;letter-spacing:0}nav,nav ul li{background-color:#4b5566;border-left:0 solid #fff}nav ul li.last-border{border-right:0 solid #fff}nav,nav ul{padding:0;margin:0}.fx-menu{margin:0 auto;max-width:67.5em;min-height:3em}.toggle,[id^=drop],[id^=show],nav ul ul{display:none}.fx-menu span.fx-close{position:fixed;right:1em}nav ul,nav ul ul li,nav ul ul ul li{position:relative;z-index:2}nav:after{content:"";display:table;clear:both}nav ul{float:left;list-style:none}nav ul li{margin:0;display:inline-block;float:left}nav a{display:block;padding:0 1.25em;color:#fff;font-size:1.25em;line-height:2.5em}nav ul li ul li{border-bottom:1px solid #fff}nav ul li ul li:hover{background:#82bbe7}nav a:hover{background-color:#82bbe7}nav ul ul{position:absolute;top:3.125em}nav ul li:hover>ul{display:inherit}nav ul ul li{width:15.5em;float:none;display:list-item}nav ul ul li a{font-size:1em}nav ul ul ul li{top:-3.125em;left:15.5em}nav li>a:after{content:' +'}nav li>a:only-child:after{content:''}.pure-g{letter-spacing:-.31em;-webkit-flex-flow:row wrap;display:-ms-flexbox;-ms-flex-flow:row wrap;-ms-align-content:flex-start;-webkit-align-content:flex-start;align-content:flex-start}.opera-only :-o-prefocus,.pure-g{word-spacing:-.43em}.pure-u,.pure-u-1,.pure-u-1-1,.pure-u-1-12,.pure-u-1-2,.pure-u-1-3,.pure-u-1-6,.pure-u-11-24,.pure-u-2-3,.pure-u-5-12{display:inline-block;letter-spacing:normal;word-spacing:normal;vertical-align:top}.pure-u-1-12{width:8.3333%}.pure-u-1-6{width:16.6667%}.pure-u-5-12{width:41.6667%}.pure-u-11-24{width:45.8333%}.pure-u-1-2{width:50%}.pure-u-1-3{width:33.3333%}.pure-u-2-3{width:66.6667%}.pure-u-1{width:100%}@media screen and (min-width:68em){.pure-u-lg-17-24,.pure-u-lg-7-24{display:inline-block;letter-spacing:normal;word-spacing:normal;vertical-align:top}.pure-u-lg-7-24{width:29.1667%}.pure-u-lg-17-24{width:70.8333%}}.table-title-border,.table_title{font-size:1.2em;padding:5px 0 10px;color:#4b5566;font-weight:700}.table-title-border{border-bottom:1px solid #ccc}.fx-border{border:1px solid #ddd;float:left;background-color:#f1f1f1;border-radius:5px;padding:5px;margin-top:1em}.sider,.sider ul li,.sider_title{background-color:#fff}.fx-border-none{border-top:1px solid #ddd}.fx-border p,.fx-border-none p{margin:1em;line-height:2em;text-indent:2em}.pure-table{border-collapse:collapse;border-spacing:0;empty-cells:show;border:1px solid #cbcbcb}.pure-table td,.pure-table th{border-left:1px solid #cbcbcb;border-width:0 0 0 1px;font-size:inherit;margin:0;overflow:visible;padding:.5em 0;text-align:center}.fx-table{width:100%;table-layout:fixed;border:1px solid #C1DAD7}.web-d{display:none}.sider{float:right;width:18.75em}.sider_d{float:left;width:100%;padding-bottom:.675em;border:1px solid #ddd}.sider_title{text-align:center;border-bottom:1px solid #ddd;height:2.2em;color:#4b5566;width:100%;padding-top:.4em}.sider_d ul{margin:.875em 3% 0;padding:0}.sider_d li{width:100%;padding-top:5px;list-style-type:none;white-space:nowrap;overflow:hidden}.sider ul li{height:2em;border-top:1px solid #fff;border-bottom:1px solid #fff}.sider ul li a{padding-left:5px}.sider_d a,.sider_d a:visited{text-decoration:none;color:#666}.sider_d li a:hover,.sider_d span{color:#2e64bc}.sider_d span{font-weight:700;padding-left:20px}.sider_d form{margin-left:5%}.fx-today{text-align:center;width:100%}.fx-today b{font-size:1.6em}@media all and (max-width:62.5em){.header,.menu,.toggle+a{display:none}.container{padding:0}.fx-js{width:99%;margin:10px .5%}.fx-100,.sider{width:100%}.sider_d,.sider_d ul{float:left;width:100%;margin:0;padding:0;background-color:#fff;border:none}.sider_d li{float:left;width:48%;padding-left:1%}.sider_title{width:100%;margin:0;border-top:1px solid #ddd;padding-top:.6em}.fx-menu{top:0;width:100%;z-index:10000;position:fixed;max-height:20em;min-height:3em;-moz-height:20em;-moz-height:3em;-webkit-height:20em;-webkit-height:3em;-o-height:20em;-o-height:3em;overflow:auto}nav ul ul,nav ul ul ul li{position:static}nav{margin:0}.toggle,[id^=drop]:checked+ul,nav ul li{display:block}.toggle{background-color:#4b5566;padding:0 1.25em;color:#fff;font-size:1.25em;line-height:2.5em;text-decoration:none;border:none}.toggle:hover{background-color:#82bbe7}nav ul li ul li .toggle,nav ul ul a,nav ul ul ul a{background-color:#2191c3}nav ul li{width:100%;border-top:1px dotted #ccc}nav ul ul .toggle,nav ul ul a{padding:0 2.5em}nav ul ul ul a{padding:0 5em}nav ul ul{float:none;color:#fff}nav ul li:hover>ul,nav ul ul li:hover>ul{display:none}nav ul ul li{display:block;width:100%}.fx-font,.table_title{padding-left:10px}.fx-location{padding:1.3em 1% 1em;margin:0;width:98%}.fx-mar-top{margin-top:1.6em}}.fxright,.fxtop{width:336px;height:280px}.fxleft{width:300px;height:250px}.fxinkad,.fxlinksidebarad{width:200px;height:90px;padding:5px 0 5px 5px}.fxadtop1{float:left;margin:1em}.fxadcenterres,.fxadcenterres1,.fxadcenterres2,.fxadtopres,.fxadtopres1{width:100%;text-align:center;margin:1em auto}.ad-sider-top,.ad-sider-top1{float:right;margin:.675em 0}@media all and (min-width:468px){.fxinkad,.fxlinksidebarad{width:468px;height:20px}}@media all and (min-width:728px){.fxinkad,.fxlinksidebarad{width:728px;height:20px}}@media all and (min-width:950px){.fxlinksidebarad{width:200px;height:90px}}@media all and (max-width:62.5em){.ad-sider-top,.ad-sider-top1{width:100%;text-align:center}}@media screen and (max-width:40em){.fxtop{width:300px;height:250px}.fxleft{width:336px;height:280px}.fxadtop1{width:100%;text-align:center;margin:1em auto}}@media screen and (max-width:25em){.fxleft,.fxright{width:300px;height:250px}}
+</style>
+<script src="//www.google-analytics.com/analytics.js" async=""></script><script src="https://www.googletagservices.com/activeview/js/current/osd.js?cb=%2Fr20100101"></script><script id="google_shimpl" src="https://pagead2.googlesyndication.com/pagead/js/r20191203/r20190131/show_ads_impl.js"></script><script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async=""></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3747066605886702",
+    enable_page_level_ads: true
+  });
+</script>
+<link href="https://adservice.google.co.kr/adsid/integrator.js?domain=kr.fxexchangerate.com" rel="preload"><script src="https://adservice.google.co.kr/adsid/integrator.js?domain=kr.fxexchangerate.com" type="text/javascript"></script><link href="https://adservice.google.com/adsid/integrator.js?domain=kr.fxexchangerate.com" rel="preload"><script src="https://adservice.google.com/adsid/integrator.js?domain=kr.fxexchangerate.com" type="text/javascript"></script></head>
+<body>
+{% extends 'base.html' %}
+{% block content %}
+<br class="main pure-g">
+<div class="pure-u-1">
+<div class="container-fluid">
+    <div class="header">
+          <div class="fx-titile">
+            <h3>환율</h3>
+             <h4>외환 환율</h4>
+          </div>
+      </div>
+</div>
+</div>
+  <div class="pure-u-1 fx-top-10">
+  <div class="container-default">
+  <div class="fx-menu">
+      <nav>
+        <label class="toggle fx-tog" for="drop"><span>Menu</span><span class="fx-close" id="spanx">☰ </span></label>
+        <input id="drop" type="checkbox">
+        <ul class="menu">
+          <li><a title="외환 환율" href="https://kr.fxexchangerate.com/" rel="nofollow">세계주요통화</a></li>
+            <li>
+            <input id="drop-1" type="checkbox">
+          </li>
+
+          <li class="last-border"><a href="https://kr.fxexchangerate.com/currency-converter-widget.html">통화 변환기</a></li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+</div><div class="container-all pure-g">
+         <div class="pure-u-1">
+          </div>
+        </div>
+    <div class="container pure-g">
+        <div class="pure-u-2-3 pure-u-lg-17-24 fx-100">
+      <div class="pure-g">
+      <div class="pure-u-1">
+           <div class="table_title">환율 보기!</div>
+
+                  <p>당신은 국경을 여행하거나 해외 온라인 쇼핑을 하시겠습니까? 당신은 외국 회사와 거래 사업을, 또는 환율에 투자하십니까?환율 변환기는 하나의 통화가 다른 통화로 변환하는 환율을 표시 자유롭고 사용하기 쉬운 도구입니다. 많이 이용하고 사랑해주세요!</p></div>
+           </div>
+        </div>
+    </div>
+</br>
+</br>
+        <div class="pure-u-1">
+            <div class="table_title">1. 환율 사용자 정의</div>
+             <div class="fx-border-none">
+              <div class="fx-widget">
+              <form class="pure-form pure-form-aligned pure-g">
+              <fieldset>
+        <div class="pure-control-group pure-u-1 fx-top-20">
+            <label for="fm">기본 통화:</label><select id="fm"><option selected="selected" value="KRW">대한민국 원</option><option value="USD">미국 달러</option><option value="EUR">유로</option><option value="GBP">영국 파운드</option><option value="JPY">일본 엔</option><option value="CHF">스위스 프랑</option><option value="CAD">캐나다 달러</option><option value="AUD">호주 달러</option><option value="CNY">중국 위안</option><option value="HKD">홍콩 달러</option><option value="RUB">러시아 루블</option><option value="MXN">멕시코 페소</option><option disabled="disabled">-----------------------------</option><option value="ALL">알바니아 렉</option><option value="DZD">알제리 디나르</option><option value="ARS">아르헨티나 페소</option><option value="AWG">아루바 플로린</option><option value="BSD">바하마 달러</option><option value="BHD">바레인 디나르</option><option value="BDT">방글라데시 타카</option><option value="BBD">바베이도스 달러</option><option value="BYR">벨라루스 루블</option><option value="BZD">벨리즈 달러</option><option value="BMD">버뮤다 달러</option><option value="BTN">부탄 눌트럼</option><option value="BOB">볼리비아노</option><option value="BWP">보츠와나 풀라</option><option value="BRL">브라질 레알</option><option value="BND">브루나이 달러</option><option value="BGN">불가리아 레프</option><option value="BIF">부룬디 프랑</option><option value="KHR">캄보디아 리엘</option><option value="CVE">카보베르데 에스쿠도</option><option value="KYD">케이맨 제도 달러</option><option value="XOF">CFA 프랑 (BCEAO)</option><option value="XAF">CFA 프랑 (BEAC)</option><option value="CLP">칠레 페소</option><option value="COP">콜롬비아 페소</option><option value="KMF">코모로 프랑</option><option value="CRC">코스타리카 콜론</option><option value="HRK">크로아티아 쿠나</option><option value="CUP">쿠바 페소</option><option value="CZK">체코 코루나</option><option value="DKK">덴마크 크로네</option><option value="DJF">지부티 프랑</option><option value="DOP">도미니카 공화국 페소 </option><option value="XCD">동카리브 달러</option><option value="EGP">이집트 파운드</option><option value="SVC">엘살바도르 콜론</option><option value="EEK">에스토니아 크룬</option><option value="ETB">에티오피아 비르</option><option value="FKP">포클랜드 제도 파운드</option><option value="FJD">피지 달러</option><option value="IDR">인도네시아 루피아</option><option value="INR">인도 루피</option><option value="GMD">감비아 달라시</option><option value="GTQ">과테말라 퀘찰</option><option value="GNF">기니 프랑</option><option value="GYD">가이아나 달러</option><option value="HTG">아이티 구르드 </option><option value="HNL">온두라스 렘피라</option><option value="HUF">헝가리 포린트</option><option value="ISK">아이슬란드 크로네</option><option value="IRR">이란 리알</option><option value="IQD">이라크 디나르</option><option value="ILS">이스라엘 셰켈</option><option value="JMD">자메이카 달러</option><option value="JOD">요르단 디나르</option><option value="KZT">카자흐스탄 텡게</option><option value="KES">케냐 실링</option><option value="KWD">쿠웨이트 디나르</option><option value="LAK">라오스 킵</option><option value="LVL">라트비아어 북위</option><option value="LBP">레바논 파운드</option><option value="LSL">레소토 로티</option><option value="LRD">라이베리아 달러</option><option value="LYD">리비아 디나르</option><option value="LTL">리투아니아 리타스</option><option value="MOP">마카오 파타카</option><option value="MKD">마케도니아 디나르</option><option value="MWK">말라위 콰차</option><option value="MYR">말레이시아 링깃</option><option value="MVR">몰디브 루피야</option><option value="MRO">모리타니 우기야</option><option value="MUR">모리셔스 루피</option><option value="MDL">몰도바 레우</option><option value="MNT">몽골 투그릭</option><option value="MAD">모로코 디르함</option><option value="MMK">미얀마 차트</option><option value="NAD">나미비아 달러</option><option value="NPR">네팔 루피</option><option value="ANG">네덜란드령 안틸레스 굴덴</option><option value="NZD">뉴질랜드 달러</option><option value="NIO">니카라과 코르도바</option><option value="NGN">나이지리아 나이라</option><option value="KPW">조선민주주의인민공화국 원</option><option value="NOK">노르웨이 크로네</option><option value="OMR">오만 리알</option><option value="XPF">CFP 프랑</option><option value="PKR">파키스탄 루피</option><option value="PAB">파나마 발보아</option><option value="PGK">파푸아 뉴기니 키나</option><option value="PYG">파라과이 과라니</option><option value="PEN">페루 누에보솔</option><option value="PHP">필리핀 페소</option><option value="PLN">폴란드 즈워티</option><option value="QAR">카타르 리알</option><option value="RON">루마니아 레우</option><option value="RWF">르완다 프랑</option><option value="WST">사모아 탈라</option><option value="STD">상투메 도브라</option><option value="SAR">사우디아라비아 리얄</option><option value="SCR">세이셸 루피</option><option value="SLL">시에라리온 레온</option><option value="SGD">싱가폴 달러</option><option value="SKK">슬로바키아 코루나</option><option value="SBD">솔로몬 제도 달러</option><option value="SOS">소말리아 실링</option><option value="ZAR">남아프리카 공화국 랜드</option><option value="LKR">스리랑카 루피</option><option value="SHP">세인트헬레나 파운드</option><option value="SDG">수단 파운드</option><option value="SZL">스와질란드 릴랑게니</option><option value="SEK">스웨덴 크로나</option><option value="SYP">시리아 파운드</option><option value="THB">태국 바트</option><option value="TRY">터키어 리라</option><option value="TWD">대만 달러</option><option value="TZS">탄자니아 실링</option><option value="TOP">통가 팡가</option><option value="TTD">트리니다드 토바고 달러</option><option value="TND">튀니지 디나르</option><option value="AED">아랍에미리트 디르함</option><option value="UGX">우간다 실링</option><option value="UAH">우크라이나 흐리브냐</option><option value="UYU">우루과이 페소</option><option value="VUV">바누아투 바투</option><option value="VND">베트남 동</option><option value="YER">예멘 리알</option><option value="ZMK">잠비아 콰차</option><option value="ZWD">짐바브웨 달러</option><option value="VEF">볼리바르 후에르떼</option><option value="UZS">우즈베크 솜</option><option value="KGS">키르기스스탄 솜</option><option value="GHS">가나 세디</option></select>
+        </div>
+        <div class="pure-u-1"> <label for="ft">통화 목록:</label></div>
+           <div class="pure-control-group pure-g">
+              <div class="pure-u-11-24">
+                  <select class="web_select" id="ft" size="10" multiple="multiple"><option selected="selected" value="KRW">대한민국 원</option><option value="USD">미국 달러</option><option value="EUR">유로</option><option value="GBP">영국 파운드</option><option value="JPY">일본 엔</option><option value="CHF">스위스 프랑</option><option value="CAD">캐나다 달러</option><option value="AUD">호주 달러</option><option value="CNY">중국 위안</option><option value="HKD">홍콩 달러</option><option value="RUB">러시아 루블</option><option value="MXN">멕시코 페소</option><option disabled="disabled">-----------------------------</option><option value="ALL">알바니아 렉</option><option value="DZD">알제리 디나르</option><option value="ARS">아르헨티나 페소</option><option value="AWG">아루바 플로린</option><option value="BSD">바하마 달러</option><option value="BHD">바레인 디나르</option><option value="BDT">방글라데시 타카</option><option value="BBD">바베이도스 달러</option><option value="BYR">벨라루스 루블</option><option value="BZD">벨리즈 달러</option><option value="BMD">버뮤다 달러</option><option value="BTN">부탄 눌트럼</option><option value="BOB">볼리비아노</option><option value="BWP">보츠와나 풀라</option><option value="BRL">브라질 레알</option><option value="BND">브루나이 달러</option><option value="BGN">불가리아 레프</option><option value="BIF">부룬디 프랑</option><option value="KHR">캄보디아 리엘</option><option value="CVE">카보베르데 에스쿠도</option><option value="KYD">케이맨 제도 달러</option><option value="XOF">CFA 프랑 (BCEAO)</option><option value="XAF">CFA 프랑 (BEAC)</option><option value="CLP">칠레 페소</option><option value="COP">콜롬비아 페소</option><option value="KMF">코모로 프랑</option><option value="CRC">코스타리카 콜론</option><option value="HRK">크로아티아 쿠나</option><option value="CUP">쿠바 페소</option><option value="CZK">체코 코루나</option><option value="DKK">덴마크 크로네</option><option value="DJF">지부티 프랑</option><option value="DOP">도미니카 공화국 페소 </option><option value="XCD">동카리브 달러</option><option value="EGP">이집트 파운드</option><option value="SVC">엘살바도르 콜론</option><option value="EEK">에스토니아 크룬</option><option value="ETB">에티오피아 비르</option><option value="FKP">포클랜드 제도 파운드</option><option value="FJD">피지 달러</option><option value="IDR">인도네시아 루피아</option><option value="INR">인도 루피</option><option value="GMD">감비아 달라시</option><option value="GTQ">과테말라 퀘찰</option><option value="GNF">기니 프랑</option><option value="GYD">가이아나 달러</option><option value="HTG">아이티 구르드 </option><option value="HNL">온두라스 렘피라</option><option value="HUF">헝가리 포린트</option><option value="ISK">아이슬란드 크로네</option><option value="IRR">이란 리알</option><option value="IQD">이라크 디나르</option><option value="ILS">이스라엘 셰켈</option><option value="JMD">자메이카 달러</option><option value="JOD">요르단 디나르</option><option value="KZT">카자흐스탄 텡게</option><option value="KES">케냐 실링</option><option value="KWD">쿠웨이트 디나르</option><option value="LAK">라오스 킵</option><option value="LVL">라트비아어 북위</option><option value="LBP">레바논 파운드</option><option value="LSL">레소토 로티</option><option value="LRD">라이베리아 달러</option><option value="LYD">리비아 디나르</option><option value="LTL">리투아니아 리타스</option><option value="MOP">마카오 파타카</option><option value="MKD">마케도니아 디나르</option><option value="MWK">말라위 콰차</option><option value="MYR">말레이시아 링깃</option><option value="MVR">몰디브 루피야</option><option value="MRO">모리타니 우기야</option><option value="MUR">모리셔스 루피</option><option value="MDL">몰도바 레우</option><option value="MNT">몽골 투그릭</option><option value="MAD">모로코 디르함</option><option value="MMK">미얀마 차트</option><option value="NAD">나미비아 달러</option><option value="NPR">네팔 루피</option><option value="ANG">네덜란드령 안틸레스 굴덴</option><option value="NZD">뉴질랜드 달러</option><option value="NIO">니카라과 코르도바</option><option value="NGN">나이지리아 나이라</option><option value="KPW">조선민주주의인민공화국 원</option><option value="NOK">노르웨이 크로네</option><option value="OMR">오만 리알</option><option value="XPF">CFP 프랑</option><option value="PKR">파키스탄 루피</option><option value="PAB">파나마 발보아</option><option value="PGK">파푸아 뉴기니 키나</option><option value="PYG">파라과이 과라니</option><option value="PEN">페루 누에보솔</option><option value="PHP">필리핀 페소</option><option value="PLN">폴란드 즈워티</option><option value="QAR">카타르 리알</option><option value="RON">루마니아 레우</option><option value="RWF">르완다 프랑</option><option value="WST">사모아 탈라</option><option value="STD">상투메 도브라</option><option value="SAR">사우디아라비아 리얄</option><option value="SCR">세이셸 루피</option><option value="SLL">시에라리온 레온</option><option value="SGD">싱가폴 달러</option><option value="SKK">슬로바키아 코루나</option><option value="SBD">솔로몬 제도 달러</option><option value="SOS">소말리아 실링</option><option value="ZAR">남아프리카 공화국 랜드</option><option value="LKR">스리랑카 루피</option><option value="SHP">세인트헬레나 파운드</option><option value="SDG">수단 파운드</option><option value="SZL">스와질란드 릴랑게니</option><option value="SEK">스웨덴 크로나</option><option value="SYP">시리아 파운드</option><option value="THB">태국 바트</option><option value="TRY">터키어 리라</option><option value="TWD">대만 달러</option><option value="TZS">탄자니아 실링</option><option value="TOP">통가 팡가</option><option value="TTD">트리니다드 토바고 달러</option><option value="TND">튀니지 디나르</option><option value="AED">아랍에미리트 디르함</option><option value="UGX">우간다 실링</option><option value="UAH">우크라이나 흐리브냐</option><option value="UYU">우루과이 페소</option><option value="VUV">바누아투 바투</option><option value="VND">베트남 동</option><option value="YER">예멘 리알</option><option value="ZMK">잠비아 콰차</option><option value="ZWD">짐바브웨 달러</option><option value="VEF">볼리바르 후에르떼</option><option value="UZS">우즈베크 솜</option><option value="KGS">키르기스스탄 솜</option><option value="GHS">가나 세디</option></select>
+              </div>
+         <div class="pure-u-1-12">
+          <div class="fx-pointer">
+            <input id="btnleft" type="button" value="   >  ">
+            <input id="btnright" type="button" value="   <  ">
+            </div>
+          </div>
+         <div class="pure-u-11-24">
+            <select class="web_select" id="fl" size="10" multiple="multiple"><option value="USD">미국 달러</option><option value="EUR">유로</option><option value="GBP">영국 파운드</option><option value="JPY">일본 엔</option><option value="AUD">호주 달러</option><option value="CAD">캐나다 달러</option><option value="CHF">스위스 프랑</option><option value="CNY">중국 위안</option><option value="HKD">홍콩 달러</option></select></div>
+          </div>
+
+        <div class="pure-control-group pure-u-1">
+            <label for="fxWidgetAmount">양 : </label>
+            <input id="fxWidgetAmount" type="number" step="0.000000000001" placeholder="Requires an amount" value="1">
+        </div>
+        <div class="pure-control-group pure-u-1">
+            <label for="fxWidgetWidth">Width :</label>
+            <select id="fxWidgetWidth"><option value="198">200</option><option value="208">210</option><option value="218">220</option><option value="228">230</option><option value="238">240</option><option selected="selected" value="248">250</option><option value="258">260</option><option value="268">270</option><option value="278">280</option><option value="288">290</option><option value="298">300</option><option value="308">310</option><option value="318">320</option><option value="328">330</option><option value="338">340</option><option value="348">350</option><option value="358">360</option><option value="368">370</option><option value="378">380</option><option value="388">390</option><option value="398">400</option><option value="408">410</option><option value="418">420</option><option value="428">430</option><option value="438">440</option><option value="448">450</option><option value="458">460</option><option value="468">470</option><option value="478">480</option><option value="488">490</option><option value="498">500</option></select>
+        </div>
+        <div class="pure-control-group pure-u-1">
+            <label for="fxWidgetLanage">언어:</label>
+            <select id="fxWidgetLanage">
+             <option value="en">English</option><option value="pt">Portuguese</option><option value="de">German</option><option value="es">Spanish</option><option value="it">Italian</option><option value="jp">Japanese</option><option value="kr">Korean</option><option value="ru">Russian</option><option value="fr">French</option>          </select>
+        </div>
+      <div class="pure-control-group pure-u-1 fx-center">
+          <input class="pure-button pure-button-primary" type="button" value="Preview">
+      </div>
+      <div class=" pure-u-1"><hr></div>
+      <div class="pure-control-group pure-u-1">
+           <label for="hb">header Background Color:</label>
+          <div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="color-picker minicolors-input" id="hb" type="text" size="7" placeholder="Enter Background Color" value="2D6AB4"><span class="minicolors-swatch minicolors-sprite minicolors-input-swatch"><span class="minicolors-swatch-color" style="opacity: 1; background-color: rgb(32, 121, 230);"></span></span><div class="minicolors-panel minicolors-slider-hue" style="display: none;"><div class="minicolors-slider minicolors-sprite"><div class="minicolors-picker" style="top: 61.29px;"></div></div><div class="minicolors-opacity-slider minicolors-sprite"><div class="minicolors-picker"></div></div><div class="minicolors-grid minicolors-sprite" style="background-color: rgb(0, 115, 255);"><div class="minicolors-grid-inner"></div><div class="minicolors-picker" style="left: 129px; top: 15px;"><div></div></div></div></div></div>
+       </div>
+        <div class="pure-control-group pure-u-1">
+            <label for="hc">header Font Color:</label>
+            <div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="color-picker minicolors-input" id="hc" type="text" size="7" placeholder="Enter Font Color" value="FFFFFF"><span class="minicolors-swatch minicolors-sprite minicolors-input-swatch"><span class="minicolors-swatch-color" style="background-color: rgb(255, 255, 255);"></span></span><div class="minicolors-panel minicolors-slider-hue"><div class="minicolors-slider minicolors-sprite"><div class="minicolors-picker" style="top: 0px;"></div></div><div class="minicolors-opacity-slider minicolors-sprite"><div class="minicolors-picker"></div></div><div class="minicolors-grid minicolors-sprite" style="background-color: rgb(255, 0, 0);"><div class="minicolors-grid-inner"></div><div class="minicolors-picker" style="left: 0px; top: 0px;"><div></div></div></div></div></div>
+        </div>
+        <div class="pure-control-group pure-u-1">
+            <label for="bb">Body Background Color:</label>
+            <div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="color-picker minicolors-input" id="bb" type="text" size="7" placeholder="Enter Background Color" value="FFFFFF"><span class="minicolors-swatch minicolors-sprite minicolors-input-swatch"><span class="minicolors-swatch-color" style="background-color: rgb(255, 255, 255);"></span></span><div class="minicolors-panel minicolors-slider-hue"><div class="minicolors-slider minicolors-sprite"><div class="minicolors-picker" style="top: 0px;"></div></div><div class="minicolors-opacity-slider minicolors-sprite"><div class="minicolors-picker"></div></div><div class="minicolors-grid minicolors-sprite" style="background-color: rgb(255, 0, 0);"><div class="minicolors-grid-inner"></div><div class="minicolors-picker" style="left: 0px; top: 0px;"><div></div></div></div></div></div>
+        </div>
+      <div class="pure-control-group pure-u-1">
+          <label for="bo">Border Color:</label>
+          <div class="minicolors minicolors-theme-default minicolors-position-bottom minicolors-position-right"><input class="color-picker minicolors-input" id="bo" type="text" size="7" placeholder="Enter Border Color" value="2D6AB4"><span class="minicolors-swatch minicolors-sprite minicolors-input-swatch"><span class="minicolors-swatch-color" style="background-color: rgb(45, 106, 180);"></span></span><div class="minicolors-panel minicolors-slider-hue"><div class="minicolors-slider minicolors-sprite"><div class="minicolors-picker" style="top: 61.29px;"></div></div><div class="minicolors-opacity-slider minicolors-sprite"><div class="minicolors-picker"></div></div><div class="minicolors-grid minicolors-sprite" style="background-color: rgb(0, 115, 255);"><div class="minicolors-grid-inner"></div><div class="minicolors-picker" style="left: 113px; top: 44px;"><div></div></div></div></div></div>
+        </div>
+       <div class="pure-control-group pure-u-1">
+           <label for="fxColorScheme">색 구성표:</label>
+          <select id="fxColorScheme">
+          <option selected="selected" value="2D6AB4,FFFFFF,F0F0F0,2D6AB4">Deep Blue</option>
+          <option value="42A400,FFFFFF,E2F0C2,42A400">Light Green</option>
+          <option value="732908,FFFFFF,F8DEB6,732908">Yellow brown</option>
+          <option value="4A4A4A,FFFFFF,D6D6D6,4A4A4A">Gray</option>
+             <option value="1094A5,FFFFFF,CEDFDE,1094A5">Baby blue</option>
+             <option value="666633,FFFFFF,CDCD5F,666633">Lemon Yellow</option>
+             <option value="5050FB,FFFFFF,6D6DFF,5050FB">Sea Blue</option>
+          <option value="FF6600,FFFFFF,FEB861,FF6600">Orange</option>
+             <option value="00CCFF,FFFFFF,ACEEFC,00CCFF">Azure Blue</option>
+             <option value="6B2921,FFFFFF,A56352,6B2921">Brownish Red</option>
+             <option value="FF9900,FFFFFF,FFEBCC,FF9900">Orange</option>
+             <option value="00FF00,FFFFFF,CAF7CA,00FF00">Peacock Green</option>
+             <option value="4B04DA,FFFFFF,C1A9F1,4B04DA">Lavender</option>
+          </select>
+        </div>
+      <div class="pure-control-group pure-u-1 fx-center">
+          <input class="pure-button pure-button-primary" type="button" value="Preview">
+      </div>
+        </fieldset></form></div>
+          </div>
+        </div>
+      <div class="pure-u-1 fx-top-10">
+      </br>
+      </br>
+        <div class="table_title">2. 환율 계산기</div>
+        <div id="preview">
+          <div style="margin: 0px auto; border: 1px solid rgb(45, 106, 180); border-image: none; width: 248px; line-height: 24px; font-family: sans-serif,Arial, Helvetica; font-size: 16px; background-color: rgb(255, 255, 255);">
+            <div style="width: 100%; height: 24px; text-align: left; color: rgb(255, 255, 255); padding-top: 3px; font-weight: bold; background-color: rgb(45, 106, 180);"><span style='background-position: 0px -2064px; margin: 4px 0px 0px 20px; width: 20px; height: 15px; float: left; background-image: url("https://www.fxexchangerate.com/static/flag.png"); background-repeat: no-repeat;'></span><a style="color: rgb(255, 255, 255); padding-left: 5px; text-decoration: none;" href="https://krw.fxexchangerate.com/" rel="nofollow">대한민국 원</a></div>            <table id="xs" style="width: 100%; font-size: 0.87em;" cellspacing="1" cellpadding="1">
+            <tbody><tr>
+                <td align="right" style="padding-right: 5px;" colspan="2"><em>1 KRW =</em></td>
+            </tr>
+ <tr>
+<td style="padding: 0px 8px 0px 5px;"><span style='background-position: 0px -2064px; margin: 5px 0px 0px 2px; width: 20px; height: 15px; float: left; background-image: url("https://www.fxexchangerate.com/static/flag.png"); background-repeat: no-repeat;'></span><font style="padding-left: 5px;"> 미국 달러</font></td>
+<td align="right" style="padding-right: 5px;">0.001</td>
+</tr><tr>
+<td style="padding: 0px 8px 0px 5px;"><span style='background-position: 0px -576px; margin: 5px 0px 0px 2px; width: 20px; height: 15px; float: left; background-image: url("https://www.fxexchangerate.com/static/flag.png"); background-repeat: no-repeat;'></span><font style="padding-left: 5px;"> 유로</font></td>
+<td align="right" style="padding-right: 5px;">0.001</td>
+</tr><tr>
+<td style="padding: 0px 8px 0px 5px;"><span style='background-position: 0px -624px; margin: 5px 0px 0px 2px; width: 20px; height: 15px; float: left; background-image: url("https://www.fxexchangerate.com/static/flag.png"); background-repeat: no-repeat;'></span><font style="padding-left: 5px;"> 영국 파운드</font></td>
+<td align="right" style="padding-right: 5px;">0.001</td>
+</tr><tr>
+<td style="padding: 0px 8px 0px 5px;"><span style='background-position: 0px -928px; margin: 5px 0px 0px 2px; width: 20px; height: 15px; float: left; background-image: url("https://www.fxexchangerate.com/static/flag.png"); background-repeat: no-repeat;'></span><font style="padding-left: 5px;"> 일본 엔</font></td>
+<td align="right" style="padding-right: 5px;">0.091</td>
+</tr><tr>
+<td style="padding: 0px 8px 0px 5px;"><span style='background-position: 0px -64px; margin: 5px 0px 0px 2px; width: 20px; height: 15px; float: left; background-image: url("https://www.fxexchangerate.com/static/flag.png"); background-repeat: no-repeat;'></span><font style="padding-left: 5px;"> 호주 달러</font></td>
+<td align="right" style="padding-right: 5px;">0.001</td>
+</tr><tr>
+<td style="padding: 0px 8px 0px 5px;"><span style='background-position: 0px -320px; margin: 5px 0px 0px 2px; width: 20px; height: 15px; float: left; background-image: url("https://www.fxexchangerate.com/static/flag.png"); background-repeat: no-repeat;'></span><font style="padding-left: 5px;"> 캐나다 달러</font></td>
+<td align="right" style="padding-right: 5px;">0.001</td>
+</tr><tr>
+<td style="padding: 0px 8px 0px 5px;"><span style='background-position: 0px -336px; margin: 5px 0px 0px 2px; width: 20px; height: 15px; float: left; background-image: url("https://www.fxexchangerate.com/static/flag.png"); background-repeat: no-repeat;'></span><font style="padding-left: 5px;"> 스위스 프랑</font></td>
+<td align="right" style="padding-right: 5px;">0.001</td>
+</tr><tr>
+<td style="padding: 0px 8px 0px 5px;"><span style='background-position: 0px -368px; margin: 5px 0px 0px 2px; width: 20px; height: 15px; float: left; background-image: url("https://www.fxexchangerate.com/static/flag.png"); background-repeat: no-repeat;'></span><font style="padding-left: 5px;"> 중국 위안</font></td>
+<td align="right" style="padding-right: 5px;">0.006</td>
+</tr><tr>
+<td style="padding: 0px 8px 0px 5px;"><span style='background-position: 0px -720px; margin: 5px 0px 0px 2px; width: 20px; height: 15px; float: left; background-image: url("https://www.fxexchangerate.com/static/flag.png"); background-repeat: no-repeat;'></span><font style="padding-left: 5px;"> 홍콩 달러</font></td>
+<td align="right" style="padding-right: 5px;">0.007</td>
+</tr>          <tr>
+          <td colspan="2"><a style="color: rgb(0, 0, 255); font-size: 12px; text-decoration: none; float: right;" href="https://www.fxexchangerate.com/exchange-rates-widget.html" rel="nofollow"> Rates 6 Dec</a></td>
+          </tr>
+          </tbody></table>
+          </div>
+         </div>
+        </div>
+   <div class="sider_d fx-top-10">
+<div class="sider_title fx-top-10">환율있는 페이지</div>
+<div class="fx-top-10"><script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async=""></script>
+<ins class="adsbygoogle fxlinksidebarad" style="height: 90px; display: block;" data-ad-slot="6982895547" data-ad-client="ca-pub-3747066605886702" data-ad-format="link" data-adsbygoogle-status="done"><ins id="aswift_4_expand" style="margin: 0px; padding: 0px; border: currentColor; border-image: none; width: 205px; height: 90px; display: inline-table; visibility: visible; position: relative; background-color: transparent;"><ins id="aswift_4_anchor" style="margin: 0px; padding: 0px; border: currentColor; border-image: none; width: 205px; height: 90px; display: block; visibility: visible; position: relative; background-color: transparent;"><iframe name="aswift_4" width="205" height="90" id="aswift_4" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" vspace="0" hspace="0" allowfullscreen="true" style="border: 0px currentColor; border-image: none; left: 0px; top: 0px; width: 205px; height: 90px; position: absolute;" allowtransparency="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<ul>
+  <li><div class="fx aud"></div><a href="https://kr.fxexchangerate.com/aud/">호주 달러</a></li><li><div class="fx brl"></div><a href="https://kr.fxexchangerate.com/brl/">브라질 레알</a></li><li><div class="fx gbp"></div><a href="https://kr.fxexchangerate.com/gbp/">영국 파운드</a></li><li><div class="fx cad"></div><a href="https://kr.fxexchangerate.com/cad/">캐나다 달러</a></li><li><div class="fx clp"></div><a href="https://kr.fxexchangerate.com/clp/">칠레 페소</a></li><li><div class="fx cny"></div><a href="https://kr.fxexchangerate.com/cny/">중국 위안</a></li><li><div class="fx egp"></div><a href="https://kr.fxexchangerate.com/egp/">이집트 파운드</a></li><li><div class="fx eur"></div><a href="https://kr.fxexchangerate.com/eur/">유로</a></li><li><div class="fx hkd"></div><a href="https://kr.fxexchangerate.com/hkd/">홍콩 달러</a></li><li><div class="fx inr"></div><a href="https://kr.fxexchangerate.com/inr/">인도 루피</a></li><li><div class="fx jpy"></div><a href="https://kr.fxexchangerate.com/jpy/">일본 엔</a></li><li><div class="fx mxn"></div><a href="https://kr.fxexchangerate.com/mxn/">멕시코 페소</a></li><li><div class="fx nzd"></div><a href="https://kr.fxexchangerate.com/nzd/">뉴질랜드 달러</a></li><li><div class="fx nok"></div><a href="https://kr.fxexchangerate.com/nok/">노르웨이 크로네</a></li><li><div class="fx pkr"></div><a href="https://kr.fxexchangerate.com/pkr/">파키스탄 루피</a></li><li><div class="fx ron"></div><a href="https://kr.fxexchangerate.com/ron/">루마니아 레우</a></li><li><div class="fx rub"></div><a href="https://kr.fxexchangerate.com/rub/">러시아 루블</a></li><li><div class="fx sgd"></div><a href="https://kr.fxexchangerate.com/sgd/">싱가폴 달러</a></li><li><div class="fx zar"></div><a href="https://kr.fxexchangerate.com/zar/">남아프리카 공화국 랜드</a></li><li><div class="fx krw"></div><a href="https://kr.fxexchangerate.com/krw/">대한민국 원</a></li><li><div class="fx chf"></div><a href="https://kr.fxexchangerate.com/chf/">스위스 프랑</a></li><li><div class="fx usd"></div><a href="https://kr.fxexchangerate.com/usd/">미국 달러</a></li></ul>
+</div>
+<div class="sider_d fx-top-10">
+<div class="sider_title fx-top-10">통화 쌍</div>
+<ul><li><a href="https://kr.fxexchangerate.com/usd/eur.html">USD / EUR</a><span> 0.90021 </span></li><li><a href="https://kr.fxexchangerate.com/gbp/usd.html">GBP / USD</a><span> 1.31605 </span></li><li><a href="https://kr.fxexchangerate.com/usd/jpy.html">USD / JPY</a><span> 108.701 </span></li><li><a href="https://kr.fxexchangerate.com/usd/chf.html">USD / CHF</a><span> 0.98696 </span></li><li><a href="https://kr.fxexchangerate.com/usd/cad.html">USD / CAD</a><span> 1.31819 </span></li><li><a href="https://kr.fxexchangerate.com/aud/usd.html">AUD / USD</a><span> 0.68405 </span></li><li><a href="https://kr.fxexchangerate.com/eur/gbp.html">EUR / GBP</a><span> 0.84408 </span></li><li><a href="https://kr.fxexchangerate.com/eur/jpy.html">EUR / JPY</a><span> 120.75138 </span></li><li><a href="https://kr.fxexchangerate.com/gbp/jpy.html">GBP / JPY</a><span> 143.05643 </span></li><li><a href="https://kr.fxexchangerate.com/aud/jpy.html">AUD / JPY</a><span> 74.35699 </span></li></ul>
+    <div class="ad-sider-top"></div>
+</div>
+</div>
+</div></div></div>
+</div>  <div class="pure-u-1">
+    <div class="container-default">
+<div class="footer-b">
+<a href="https://www.fxexchangerate.com/">FX Exchange Rate</a>  |
+<a href="https://jp.fxexchangerate.com/">FX 外為 為替レート</a> |
+<a href="https://pt.fxexchangerate.com/">Taxa de câmbio|Moeda</a> |
+<a href="https://de.fxexchangerate.com/">Forex Wechselkurs</a> |
+<a href="https://it.fxexchangerate.com/">Forex e cambio valuta</a> |
+<a href="https://fr.fxexchangerate.com/">Taux de Change</a> |
+<a href="https://es.fxexchangerate.com/">Tipo de Cambio</a> |
+<a href="https://ru.fxexchangerate.com/">Обмен валюты</a> |
+<a href="https://kr.fxexchangerate.com/">외환 환율</a> | </div></div>
+</div></div>
+    <a title="Back to top" id="back-to-top" href="#"></a>
+
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script><ins class="adsbygoogle adsbygoogle-noablate" style="display: none !important;" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="margin: 0px; padding: 0px; border: currentColor; border-image: none; width: 0px; height: 0px; display: inline-table; visibility: visible; position: relative; background-color: transparent;"><ins id="aswift_0_anchor" style="margin: 0px; padding: 0px; border: currentColor; border-image: none; width: 0px; height: 0px; display: block; visibility: visible; position: relative; background-color: transparent;"><iframe name="aswift_0" id="aswift_0" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" vspace="0" hspace="0" allowfullscreen="true" style="border: 0px currentColor; border-image: none; left: 0px; top: 0px; width: 0px; height: 0px; position: absolute;" allowtransparency="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}"></iframe></ins></ins></ins>
+<script type="text/javascript">
+  $(document).ready(function(){
+ $("#fxSidebarInv").click(function(){
+ sfv = $("#fxSidebarFrom").val();
+  stv = $("#fxSidebarTo").val();
+ $("#fxSidebarTo").val(sfv); $("#fxSidebarFrom").val(stv);
+ });
+ });
+ </script>
+ <script type="text/javascript">
+$(document).ready(function(){
+       document.addEventListener("touchstart", function() {}, !0), $(".container").click(function() {
+        $("#drop").is(":checked")&&$("#spanx").click()
+    }), $(".fx-tog").bind("click", function() {
+        $("#drop"),$("#spanx"),$("#drop").is(":checked")?$("#spanx").html("&#9776;"):$("#spanx").html("X")
+    })
+   });
+</script>
+ <script type="text/javascript">
+$(document).ready(function(){
+if ($('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
+            } else {
+                $('#back-to-top').removeClass('show');
+            }
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+}
+   });
+</script>
+  <script type="text/javascript">
+$(document).ready(function(){
+if ( screen.width > 720 ){
+$('.fxadcenterres1').append($('.fxadright'));
+}
+if ( screen.width <640 ){
+
+     $('.fxadtopres').append($('.fxadtop'));
+     $('.fxadcenterres').append($('.fxadleft'));
+     $('.fxadcenterres1').append($('.fxadright'));
+
+}
+});
+(function(i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date();
+    a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m) })(window, document, 'script', '//www.goo' + 'g' + 'le-a' + 'naly' + 'tics.com/analytics.js', 'ga');
+ga('create', 'UA' + '-4' + '90' + '1199' + '4-1', 'auto');
+ga('send', 'pageview');
+</script>  <script type="text/javascript">
+$(function(){
+                $('#ft').bind('dblclick',function(){
+     moveToRight('ft','fl');
+    });
+    $('#fl').bind('dblclick',function(){
+     moveToLeft('ft','fl');
+    });
+
+    $('#btnleft').bind('click',function(){
+     moveToRight('ft','fl');
+    });
+    $('#btnright').bind('click',function(){
+     moveToLeft('ft','fl');
+    });
+    function moveToRight(select1,select2)
+{
+ $('#'+select1+' option:selected').each(function(){
+      if(!jsSelectIsExitItem(select2, $(this).val()))
+      {
+  $("<option value='"+$(this).val()+"'>"+$(this).text()+"</option>").appendTo("#"+select2+"");
+       }
+  $('#'+select2).bind('dblclick',function(){
+  moveToLeft(select1,select2);
+  });
+ });
+}
+function moveToLeft(select1,select2)
+{
+ $('#'+select2+' option:selected').each(function(){
+  //$("<option value='"+$(this).val()+"'>"+$(this).text()+"</option>").appendTo("#"+select1+"");
+  $(this).remove();
+ });
+}
+function jsSelectIsExitItem(d, c) {
+    var b = false;
+     $('#'+d+' option').each(function(){
+  if ($(this).val() == c) {
+  b = true;}
+ });
+    return b }
+    $("#fxColorScheme").bind("change",function(){
+      var arrScheme = $(this).val().split(',');
+
+      $("#hb").minicolors('value','#'+arrScheme[0]);
+      $("#hc").minicolors('value','#'+arrScheme[1]);
+      $("#bb").minicolors('value','#'+arrScheme[2]);
+      $("#bo").minicolors('value','#'+arrScheme[3]);
+    });
+
+    $("#fxWidgetHtml").bind("focus",function(){
+      $("#fxWidgetHtml").select();
+    });
+    $(".pure-button").bind("click",function(){
+    var currencyFrom = $("#fm").val();
+    var currencyList="";
+    $("#fl option").each(function() {
+        currencyList +=$(this).val()+",";
+        });
+     var fxamount = $("#fxWidgetAmount").val();
+     var fxwith = $("#fxWidgetWidth").val();
+     var fxlanage = $("#fxWidgetLanage").val();
+     var fxhb = $("#hb").val().replace("#","");
+     var fxhc = $("#hc").val().replace("#","");
+     var fxbb = $("#bb").val().replace("#","");
+     var fxbo = $("#bo").val().replace("#","");
+     // "fm" : currencyFrom , "ft":currencyList , "lg":fxlanage, "am":fxamount , "wh":fxwith
+     $.get("https://www.fxexchangerate.com/api/ajax-widget.php", { "fm" : currencyFrom , "ft":currencyList , "lg":fxlanage, "am":fxamount , "wh":fxwith , "hb":fxhb , "hc":fxhc , "bb":fxbb , "bo":fxbo , "ty":2},
+    function(req) {
+        $("#preview").html(req);
+       $("#fxWidgetHtml").val('<!-- Currency Converter Script - FxExchangeRate.com  --><div style="font-size:16px;font-family:sans-serif,Arial,Helvetica;width:'+fxwith+'px; line-height:24px;border:1px solid #'+fxbo+';background-color:#'+fxbb+';">'+$("#preview>div>div").prop("outerHTML")+'<script type="text/javascript" src="https://w.fxexchangerate.com/converter.php?fm='+currencyFrom+'&ft='+currencyList+'&lg='+fxlanage+'&am='+fxamount+'&ty=2"><\/script></div><!--  End of Currency Converter Script -  FxExchangeRate.com -->');
+    });
+})
+});
+</script>
+<script src="https://www.fxexchangerate.com/static/jquery.minicolors.min.js"> </script><iframe name="google_osd_static_frame" id="google_osd_static_frame_6852709099649" style="width: 0px; height: 0px; display: none;"></iframe>
+<link href="https://www.fxexchangerate.com/static/jquery.minicolors.css" rel="stylesheet" type="text/css" property="stylesheet">
+<script>
+$(function(){$(".color-picker").each(function(){$(this).minicolors({defaultValue:$(this).attr("data-defaultValue")||"",format:$(this).attr("data-format")||"hex",keywords:$(this).attr("data-keywords")||"",inline:"true"===$(this).attr("data-inline"),letterCase:$(this).attr("data-letterCase")||"uppercase",position:$(this).attr("data-position")||"bottom right",change:function(t,a){var e;try{e=t?t:"transparent",a&&(e+=", "+a),console.log(e)}catch(r){}},theme:"default"})})});
+$(document).ready(function(){
+if ( screen.width >620){
+$('.fxadcenterres').append($('.fxadright'));
+}
+});
+</script>
+
+<div>
+      <link href="https://www.fxexchangerate.com/static/styleextra.css" rel="stylesheet" type="text/css">
+    </div>
+{% endblock %}
+</body><iframe name="google_esf" id="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20191203/r20190131/zrt_lookup.html#" style="display: none;" data-ad-client="ca-pub-3747066605886702"></iframe></html>

@@ -1,0 +1,40 @@
+<!--
+layout: examples
+title: Cover Template
+extra_css: "cover.css"
+body_class: "text-center"
+include_js: false
+-->
+{% load static %}
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/cover.css' %}">
+</head>
+<body class="text-center">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h3 class="masthead-brand">FoxTravelOffice</h3>
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="#">Home</a>
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main" class="inner cover">
+    <h1 class="cover-heading">Welcome to FoxTravelOffice</h1>
+    <p class="lead">숙명여자대학교 서버보안 14조가 만든 여행 웹사이트입니다.<br/>여행리뷰 남기기, 여행지 정보검색, 지도보기를 원한다면 클릭</p>
+    <p class="lead">
+      <a href="{% url 'blogMain' %}" class="btn btn-lg btn-secondary">Learn more</a>
+    </p>
+  </main>
+
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>develope by 김다희, 윤예빈, 한재경, 임유진, 양지영</p>
+    </div>
+  </footer>
+</div>
+</body>
